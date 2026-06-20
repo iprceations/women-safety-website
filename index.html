@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Women Safety — Resources & Emergency Contacts</title>
+  <meta name="description" content="Community resources, safety tips, and emergency contacts to help keep women safe." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Women Safety</a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tips">Safety Tips</a></li>
+          <li><a href="#emergency">Emergency</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" role="region" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">Support, Resources & Emergency Help</h1>
+        <p>Find practical safety tips, emergency hotlines, and community resources to help keep you and loved ones safe.</p>
+        <a class="cta" href="#emergency">Get help now</a>
+      </div>
+    </section>
+
+    <section id="tips" class="section" aria-labelledby="tips-heading">
+      <div class="container">
+        <h2 id="tips-heading">Practical Safety Tips</h2>
+        <ul class="tips-list">
+          <li><strong>Trust your instincts:</strong> If a situation feels unsafe, remove yourself when possible.</li>
+          <li><strong>Share your location:</strong> Let a trusted person know your route or use location-sharing features.</li>
+          <li><strong>Plan exits:</strong> On arrival to places, note exits and well-lit areas.</li>
+          <li><strong>Carry emergency essentials:</strong> Phone, charged power bank, small flashlight, whistle, or self-defense tool where legal.</li>
+          <li><strong>Stay aware:</strong> Avoid distractions like prolonged headphone use in unfamiliar areas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="emergency" class="section emergency" aria-labelledby="emergency-heading">
+      <div class="container">
+        <h2 id="emergency-heading">Emergency Contacts</h2>
+        <p>If you're in immediate danger call your local emergency number right away.</p>
+        <div class="emergency-grid">
+          <div class="card">
+            <h3>Local Police</h3>
+            <p><a href="tel:+91123">+91 123 (example)</a></p>
+          </div>
+          <div class="card">
+            <h3>Women's Helpline</h3>
+            <p><a href="tel:+91124">+91 124 (example)</a></p>
+          </div>
+          <div class="card">
+            <h3>Counseling & Support</h3>
+            <p><a href="tel:+91125">+91 125 (example)</a></p>
+          </div>
+        </div>
+        <p class="muted">Replace the example numbers above with real hotlines for your country/region.</p>
+      </div>
+    </section>
+
+    <section id="resources" class="section" aria-labelledby="resources-heading">
+      <div class="container">
+        <h2 id="resources-heading">Resources</h2>
+        <ul class="resources-list">
+          <li><a href="#" target="_blank" rel="noopener">Local shelters and safe houses</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Legal support and rights information</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Online counseling and chat support</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Self-defense classes and courses</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact & Report</h2>
+        <p>If you want to report a concern or ask for resources, use the form below. For emergencies use the numbers above.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p class="muted">Note: The form opens your email client to send a message. For a hosted contact form integrate a backend or service like Formspree.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Women Safety — Built by iprceations</p>
+      <p><a href="https://github.com/iprceations/women-safety-website" target="_blank" rel="noopener">Project on GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
