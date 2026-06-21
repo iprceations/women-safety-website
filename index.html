@@ -5,12 +5,26 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Women Safety — Resources & Emergency Contacts</title>
   <meta name="description" content="Community resources, safety tips, and emergency contacts to help keep women safe." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Women Safety — Resources & Emergency Contacts" />
+  <meta property="og:description" content="Practical safety tips, emergency hotlines, and community resources." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.svg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#">Women Safety</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo.svg" alt="Women Safety logo" class="logo">
+        <span class="brand-text">Women Safety</span>
+      </a>
+
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">Menu</button>
       <nav id="mainNav" class="main-nav" aria-label="Main navigation">
         <ul>
@@ -24,12 +38,20 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section id="home" class="hero" role="region" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading">Support, Resources & Emergency Help</h1>
-        <p>Find practical safety tips, emergency hotlines, and community resources to help keep you and loved ones safe.</p>
-        <a class="cta" href="#emergency">Get help now</a>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Support, Resources & Emergency Help</h1>
+          <p>Find practical safety tips, emergency hotlines, and community resources to help keep you and loved ones safe.</p>
+          <div class="hero-cta">
+            <a class="cta" href="#emergency">Get help now</a>
+            <a class="cta secondary" href="#resources">Find resources</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/hero.svg" alt="Illustration of support and safety" class="hero-img" loading="lazy">
+        </div>
       </div>
     </section>
 
@@ -52,14 +74,17 @@
         <p>If you're in immediate danger call your local emergency number right away.</p>
         <div class="emergency-grid">
           <div class="card">
+            <img src="assets/icons/police.svg" alt="police icon" class="icon" loading="lazy">
             <h3>Local Police</h3>
             <p><a href="tel:+91123">+91 123 (example)</a></p>
           </div>
           <div class="card">
+            <img src="assets/icons/helpline.svg" alt="helpline icon" class="icon" loading="lazy">
             <h3>Women's Helpline</h3>
             <p><a href="tel:+91124">+91 124 (example)</a></p>
           </div>
           <div class="card">
+            <img src="assets/icons/support.svg" alt="support icon" class="icon" loading="lazy">
             <h3>Counseling & Support</h3>
             <p><a href="tel:+91125">+91 125 (example)</a></p>
           </div>
@@ -68,48 +93,4 @@
       </div>
     </section>
 
-    <section id="resources" class="section" aria-labelledby="resources-heading">
-      <div class="container">
-        <h2 id="resources-heading">Resources</h2>
-        <ul class="resources-list">
-          <li><a href="#" target="_blank" rel="noopener">Local shelters and safe houses</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Legal support and rights information</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Online counseling and chat support</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Self-defense classes and courses</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading">Contact & Report</h2>
-        <p>If you want to report a concern or ask for resources, use the form below. For emergencies use the numbers above.</p>
-
-        <form id="contactForm" class="contact-form" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required>
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-
-        <p class="muted">Note: The form opens your email client to send a message. For a hosted contact form integrate a backend or service like Formspree.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <p>© <span id="year"></span> Women Safety — Built by iprceations</p>
-      <p><a href="https://github.com/iprceations/women-safety-website" target="_blank" rel="noopener">Project on GitHub</a></p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <section id="resources" class="section
