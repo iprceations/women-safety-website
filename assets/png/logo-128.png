@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 120 120" role="img" aria-label="Women Safety logo">
+  <defs>
+    <linearGradient id="g128" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff6b9a"/>
+      <stop offset="1" stop-color="#d6336c"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="18" fill="url(#g128)"/>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="44" fill="#fff">W</text>
+</svg>
