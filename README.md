@@ -1,6 +1,6 @@
 # Women Safety — Static Website
 
-![Women Safety logo](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/logo.svg)
+![Women Safety logo](assets/png/logo-512.png)
 
 A lightweight, accessible static website that provides safety tips, emergency hotlines, and community resources for women.
 
@@ -22,13 +22,13 @@ Key pages and sections:
 
 Hero illustration:
 
-![Hero illustration](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/hero.svg)
+![Hero illustration](assets/png/hero-800.png)
 
 Emergency card icon example:
 
-![Police icon](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/icons/police.svg)
+![Police icon](assets/png/icons/police-128.png)
 
-> If SVG images do not render correctly in your browser or on GitHub, I can add PNG fallbacks. Let me know if you prefer PNG assets and I will push them.
+> If images still don't render correctly in your browser or on GitHub, tell me and I will replace these placeholders with high-quality PNGs.
 
 ---
 
@@ -37,7 +37,7 @@ Emergency card icon example:
 - Static and lightweight (HTML/CSS/JS)
 - Responsive layout for mobile and desktop
 - Accessible markup (skip link, ARIA attributes, semantic HTML)
-- SVG logo, favicon, hero illustration, and icon set
+- SVG logo, favicon, hero illustration, and icon set (PNG fallbacks included)
 - Simple contact form fallback using `mailto:` (easy to replace with Formspree/Netlify)
 
 ---
@@ -47,7 +47,7 @@ Emergency card icon example:
 - `index.html` — Main site markup
 - `styles.css` — Styling and responsive rules
 - `script.js` — Small JS for nav toggle and contact handling
-- `assets/` — Logo, favicon, hero illustration, icons
+- `assets/` — Logo, favicon, hero illustration, icons (SVG + PNG fallbacks)
 - `README.md` — This file
 - `LICENSE` — MIT license
 
@@ -103,15 +103,15 @@ Example:
 
 ---
 
-## Troubleshooting: SVGs not rendering in README
+## Troubleshooting: Images not rendering
 
-If you or visitors see blank boxes or the images don't appear in the README:
+If images don't appear in the README or site:
 
-- Confirm the files exist at `assets/` (they do in this repo).
-- Try opening the raw image URL directly (example: `https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/logo.svg`).
-- Some browsers or security settings block inline SVG rendering. If that happens, I can create PNG fallbacks and update the README and pages to use them.
+- Check the files exist under `assets/png/` and `assets/` in the repo (they do now).
+- Try opening the raw image URL directly (example: `https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/png/logo-512.png`).
+- Some browsers or security settings block inline SVG rendering. Using PNG fallbacks helps — replace placeholders with proper PNGs later if needed.
 
-If you'd like PNGs, reply “Add PNG fallbacks” and I will convert the SVGs to PNG and push them.
+If you'd like, I can replace the placeholders with high-quality PNGs next — tell me which images to replace first (logo/hero/icons/all).
 
 ---
 
