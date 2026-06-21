@@ -1,6 +1,6 @@
 # Women Safety — Static Website
 
-![Women Safety logo](assets/png/logo-512.png)
+![Women Safety logo](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/logo.svg)
 
 A lightweight, accessible static website that provides safety tips, emergency hotlines, and community resources for women.
 
@@ -20,15 +20,17 @@ Key pages and sections:
 
 ## Demo / Screenshots
 
-Hero illustration:
+If PNG previews are not showing, the repository currently uses the SVG files directly (these are reliable when referenced with the raw URL). You can also open the mockup page which overlays the logo on the screenshot:
 
-![Hero illustration](assets/png/hero-800.png)
+- Mockup (logo + screenshot overlay): [screenshot-mock.html](https://github.com/iprceations/women-safety-website/blob/main/screenshot-mock.html)
 
-Emergency card icon example:
+Hero illustration (SVG):
 
-![Police icon](assets/png/icons/police-128.png)
+![Hero illustration](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/hero.svg)
 
-> If images still don't render correctly in your browser or on GitHub, tell me and I will replace these placeholders with high-quality PNGs.
+Emergency card icon example (SVG):
+
+![Police icon](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/icons/police.svg)
 
 ---
 
@@ -37,7 +39,7 @@ Emergency card icon example:
 - Static and lightweight (HTML/CSS/JS)
 - Responsive layout for mobile and desktop
 - Accessible markup (skip link, ARIA attributes, semantic HTML)
-- SVG logo, favicon, hero illustration, and icon set (PNG fallbacks included)
+- SVG logo, favicon, hero illustration, and icon set
 - Simple contact form fallback using `mailto:` (easy to replace with Formspree/Netlify)
 
 ---
@@ -53,21 +55,12 @@ Emergency card icon example:
 
 ---
 
-## Customize
+## Troubleshooting: Images not rendering
 
-1. Update emergency numbers in `index.html` (replace the example numbers with real hotlines for your region).
-2. Update the support email in `script.js` (replace `support@example.com`) or integrate a hosted form service (Formspree or Netlify Forms).
-3. Replace `assets/logo.svg` with your brand logo (SVG or PNG) and adjust colors in `styles.css` as needed.
-4. Add additional pages (Privacy Policy, Terms, Blog) as separate HTML or Markdown files and link them in the navigation.
+If images don't appear in the README or site:
 
----
-
-## Deploy on GitHub Pages
-
-1. Make sure the repo exists at `iprceations/women-safety-website` (it does).
-2. Push your changes to the `main` branch.
-3. In GitHub, go to Settings → Pages → Source and choose `main` branch and `/ (root)`.
-4. Save; the site should be published at `https://iprceations.github.io/women-safety-website/` in a few minutes.
+- I updated the README to point to the raw SVG files. If these still show as broken images in your view, please attach the final PNG files (logo and the full screenshot) in this chat, and I will add them to `assets/png/` and update the README to use the PNGs.
+- To upload PNGs here, attach them to the chat and reply “Upload provided PNGs” — I will replace placeholders immediately and push to `main`.
 
 ---
 
@@ -80,47 +73,6 @@ From the repository root you can run a simple static server:
 python -m http.server 8000
 # then open http://localhost:8000
 ```
-
-Or use any static server (Live Server extension in VS Code, http-server npm package, etc.).
-
----
-
-## Optional: Replace contact form with Formspree
-
-1. Sign up at Formspree and create a form. You will get an endpoint like `https://formspree.io/f/yourid`.
-2. Replace the contact form in `index.html` with a standard HTML form that POSTs to that endpoint.
-
-Example:
-
-```html
-<form action="https://formspree.io/f/yourid" method="POST">
-  <input name="name" required />
-  <input name="email" type="email" required />
-  <textarea name="message" required></textarea>
-  <button type="submit">Send</button>
-</form>
-```
-
----
-
-## Troubleshooting: Images not rendering
-
-If images don't appear in the README or site:
-
-- Check the files exist under `assets/png/` and `assets/` in the repo (they do now).
-- Try opening the raw image URL directly (example: `https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/png/logo-512.png`).
-- Some browsers or security settings block inline SVG rendering. Using PNG fallbacks helps — replace placeholders with proper PNGs later if needed.
-
-If you'd like, I can replace the placeholders with high-quality PNGs next — tell me which images to replace first (logo/hero/icons/all).
-
----
-
-## Contributing
-
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/my-change`
-3. Make and commit changes
-4. Open a pull request — I will review and merge
 
 ---
 
