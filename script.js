@@ -1,11 +1,14 @@
-// Small scripts: mobile nav toggle, contact form -> mailto handler, set year
 document.addEventListener('DOMContentLoaded', function(){
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');
   navToggle && navToggle.addEventListener('click', function(){
     const expanded = this.getAttribute('aria-expanded') === 'true';
     this.setAttribute('aria-expanded', String(!expanded));
-    mainNav.style.display = expanded ? 'none' : 'block';
+    if(!expanded){
+      mainNav.style.display = 'block';
+    } else {
+      mainNav.style.display = 'none';
+    }
   });
 
   // Set current year
@@ -16,17 +19,16 @@ document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('contactForm');
   form && form.addEventListener('submit', function(e){
     e.preventDefault();
-    const name = encodeURIComponent(document.getElementById('name').value.trim());
-    const email = encodeURIComponent(document.getElementById('email').value.trim());
-    const message = encodeURIComponent(document.getElementById('message').value.trim());
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
     if(!name || !email || !message){
       alert('Please complete all fields before sending.');
       return;
     }
-    // Replace the email below with your support inbox
-    const to = 'support@example.com';
+    const to = 'support@example.com'; // replace
     const subject = encodeURIComponent('Contact from Women Safety website');
-    const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(message)}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
   });
 });
