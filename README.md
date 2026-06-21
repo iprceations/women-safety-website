@@ -1,49 +1,48 @@
 # Women Safety — Static Website
 
-![logo](assets/logo.svg)
+![Women Safety logo](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/logo.svg)
 
-A simple, accessible static website that provides safety tips, emergency hotlines, and community resources for women.
-
----
-
-## सारांश (Summary / हिंदी)
-
-यह प्रोजेक्ट महिलाओं की सुरक्षा के लिए एक हल्का, सहज उपयोगी वेबसाइट स्टार्टर्स पैक है। इसमें:
-
-- होम पेज (हीरो सेक्शन) — तत्क्षण सहायता और संसाधनों के लिंक।
-- प्रैक्टिकल सुरक्षा सुझाव (Safety Tips)।
-- आपातकालीन संपर्क (Emergency Contacts) — कॉल करने के लिए नंबर।
-- संसाधन लिंक (Resources) और संपर्क फॉर्म (mail-to fallback)।
-
-यह साइट पूरी तरह से स्टैटिक है (HTML/CSS/JS) और GitHub Pages पर आसानी से डिप्लॉय हो सकती है।
+A lightweight, accessible static website that provides safety tips, emergency hotlines, and community resources for women.
 
 ---
 
-## Screenshots / Demo
+## Overview
+
+This repository contains a simple, responsive static site built with HTML, CSS, and JavaScript. It's intended as a starter kit you can customize and publish on GitHub Pages.
+
+Key pages and sections:
+- Hero / Home — immediate access to help and resources
+- Practical safety tips
+- Emergency contacts (call links)
+- Resources and contact form (mailto fallback)
+
+---
+
+## Demo / Screenshots
 
 Hero illustration:
 
-![hero](assets/hero.svg)
+![Hero illustration](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/hero.svg)
 
-Emergency cards (icons are SVG):
+Emergency card icon example:
 
-![icons](assets/icons/police.svg)
+![Police icon](https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/icons/police.svg)
 
-> Note: These SVGs are included in the `assets/` folder and are scalable, small, and accessible.
+> If SVG images do not render correctly in your browser or on GitHub, I can add PNG fallbacks. Let me know if you prefer PNG assets and I will push them.
 
 ---
 
 ## Features
 
-- Lightweight static site (no backend required)
+- Static and lightweight (HTML/CSS/JS)
 - Responsive layout for mobile and desktop
 - Accessible markup (skip link, ARIA attributes, semantic HTML)
-- SVG logo, favicon, hero illustration, and small icon set
-- Contact form fallback using `mailto:` (easy to replace with Formspree/Netlify)
+- SVG logo, favicon, hero illustration, and icon set
+- Simple contact form fallback using `mailto:` (easy to replace with Formspree/Netlify)
 
 ---
 
-## File structure
+## Repository structure
 
 - `index.html` — Main site markup
 - `styles.css` — Styling and responsive rules
@@ -54,79 +53,83 @@ Emergency cards (icons are SVG):
 
 ---
 
-## Customize (क्या बदलें)
+## Customize
 
-1. Emergency numbers: Open `index.html` और बदलें `+91 123`, `+91 124`, `+91 125` को अपने देश/क्षेत्र के असली हॉटलाइन नंबर से।
-2. Contact email: `script.js` में `support@example.com` को अपनी सहायता ईमेल से बदलें, या Formspree/Netlify forms जोड़ें।
-3. Brand colors / logo: `assets/logo.svg` को अपनी ब्रांड SVG से बदलें और `styles.css` में रंग समायोजित करें।
-4. Add pages: अगर आप ब्लॉग या कानूनी पृष्ठ (Privacy Policy, Terms) जोड़ना चाहते हैं तो नई Markdown/HTML फाइलें बनाकर लिंक जोड़ें।
-
----
-
-## Deploy (GitHub Pages पर डालें)
-
-1. रिपॉजिटरी मौजूद है: `iprceations/women-safety-website`।
-2. Commit & push सभी फाइलें (यदि लोकली कर रहे हों)।
-3. GitHub → repo Settings → Pages → Source: `main` branch, folder: `/ (root)` चुनें।
-4. Save करें; कुछ ही मिनटों में साइट उपलब्ध होगी: `https://iprceations.github.io/women-safety-website/`
+1. Update emergency numbers in `index.html` (replace the example numbers with real hotlines for your region).
+2. Update the support email in `script.js` (replace `support@example.com`) or integrate a hosted form service (Formspree or Netlify Forms).
+3. Replace `assets/logo.svg` with your brand logo (SVG or PNG) and adjust colors in `styles.css` as needed.
+4. Add additional pages (Privacy Policy, Terms, Blog) as separate HTML or Markdown files and link them in the navigation.
 
 ---
 
-## Local preview (लोकल प्रीव्यू)
+## Deploy on GitHub Pages
 
-Terminal में (repo root):
+1. Make sure the repo exists at `iprceations/women-safety-website` (it does).
+2. Push your changes to the `main` branch.
+3. In GitHub, go to Settings → Pages → Source and choose `main` branch and `/ (root)`.
+4. Save; the site should be published at `https://iprceations.github.io/women-safety-website/` in a few minutes.
+
+---
+
+## Local preview
+
+From the repository root you can run a simple static server:
 
 ```bash
-# Python 3 से
+# with Python 3
 python -m http.server 8000
-# ब्राउज़र में खोलें: http://localhost:8000
+# then open http://localhost:8000
 ```
 
-या अपने पसंदीदा static server का प्रयोग करें (Live Server extension, http-server npm, आदि)।
+Or use any static server (Live Server extension in VS Code, http-server npm package, etc.).
 
 ---
 
-## Integrate a hosted contact form (Formspree example)
+## Optional: Replace contact form with Formspree
 
-Formspree जैसी services जोड़ने के लिए:
+1. Sign up at Formspree and create a form. You will get an endpoint like `https://formspree.io/f/yourid`.
+2. Replace the contact form in `index.html` with a standard HTML form that POSTs to that endpoint.
 
-1. Formspree पर अकाउंट बनाएं और new form बनाएं। आपको एक POST endpoint मिलेगा, जैसे `https://formspree.io/f/yourid`।
-2. `index.html` में contact फॉर्म के `<form id="contactForm">` को इस तरह बदलें:
+Example:
 
 ```html
 <form action="https://formspree.io/f/yourid" method="POST">
-  <input name="name" required>
-  <input name="email" type="email" required>
+  <input name="name" required />
+  <input name="email" type="email" required />
   <textarea name="message" required></textarea>
   <button type="submit">Send</button>
 </form>
 ```
 
-3. (Optional) Add a hidden input for spam protection or redirect on success.
+---
+
+## Troubleshooting: SVGs not rendering in README
+
+If you or visitors see blank boxes or the images don't appear in the README:
+
+- Confirm the files exist at `assets/` (they do in this repo).
+- Try opening the raw image URL directly (example: `https://raw.githubusercontent.com/iprceations/women-safety-website/main/assets/logo.svg`).
+- Some browsers or security settings block inline SVG rendering. If that happens, I can create PNG fallbacks and update the README and pages to use them.
+
+If you'd like PNGs, reply “Add PNG fallbacks” and I will convert the SVGs to PNG and push them.
 
 ---
 
 ## Contributing
 
-यदि आप सुधार करना चाहते हैं:
-
-1. Fork करें
-2. Branch बनाएं (`git checkout -b feature/my-change`)
-3. Commit और push करें
-4. Pull request बनायें — मैं review कर लूंगा और merge कर दूंगा
+1. Fork the repo
+2. Create a branch: `git checkout -b feature/my-change`
+3. Make and commit changes
+4. Open a pull request — I will review and merge
 
 ---
 
 ## License
 
-MIT — विवरण `LICENSE` फ़ाइल में है.
+MIT — see the `LICENSE` file.
 
 ---
 
 ## Contact
 
-For changes or help setting up hosting, contact: `phsnoida@gmail.com` (repo committer) or update `script.js` to the support email you prefer.
-
----
-
-Happy to improve further — मैं README में और हिंदी-बैक्ड ट्यूटोरियल या अलग-अलग क्षेत्र के emergency number templates भी जोड़ सकता/सकती हूँ।
+For help or customizations, contact: phsnoida@gmail.com
